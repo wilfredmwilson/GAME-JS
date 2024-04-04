@@ -25,9 +25,9 @@ function playRound(playerSelection, computerSelection) {
     }
    
   }
-  function playGame(playerSelection,computerSelection)
+  function playGame()
   {
-    var win=0;
+    var wincount=0;
     for(let i=1;i<=5 ;i++)
     {   
         let playerSelection= prompt("ENTER YOUR CHOICE")
@@ -36,16 +36,16 @@ function playRound(playerSelection, computerSelection) {
         if(result == "WIN")
         {
             
-            win ++;
+            wincount ++;
         }
     }
-    if(win >= 3)
+    if(wincount >= 3)
     {
-        return `YOU WON THE MATCH WITH SCORE  ${win}`;
+        return `YOU WON THE MATCH WITH SCORE  ${wincount}`;
     }
     else
     {
-        return `COMPUTER WON THE MATCH WITH SCORE  ${win}`;
+        return `YOU LOSE THE MATCH WITH SCORE ${wincount}`;
     }
   }
   
