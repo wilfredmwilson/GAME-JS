@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- <link rel="stylesheet" href="styles.css"> -->
-        <script src="game.js"></script>
-        <title>Game</title>
-    </head>
-    <body >
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>GAME</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="center">
+    <div class="container">
+    <div class="counter-div">
+        <div class="player-div">
+            <p class="counter" id="player-counter">0</p>
+            <p class="pick" id="player-pick"></p>
+            <p class="pick" >Player</p>
+        </div>
+            <div class="player-div">
+            <p class="counter" id="cpu-counter">0</p>
+            <p class="pick" id="cpu-pick"></p>
+            <p class="pick" >CPU</p>
+        </div>
+    </div>
+    <div class="display-message">
+        <p id="message">Pick an Choice</p>
+    </div>
+    <div class="buttons">
+        <a class="rock" onclick="playerRock()">Rock</a>
+        <a class="paper" onclick="playerPaper()">Paper</a>
+        <a class="scissors" onclick="playerScissors()">Scissors</a>
+    </div>
+</div>
+</div>
+<script src="games.js"></script>
+</body>
 </html>
